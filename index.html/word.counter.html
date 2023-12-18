@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+        }
+        textarea{
+            width: 100%;
+            padding: 20px;     
+        }
+        div{
+            width: 100%;
+            background-color: rgb(88, 21, 82);
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Word Countrer</h1>
+
+    <textarea name="Word" id="word" cols="30" rows="10"></textarea>
+    
+    <div>
+        <h1><span id="count">0</span> Word and <span id="char">0</span> Char</h1>
+    </div>
+
+
+
+
+    <script>
+        
+        // let x= document.getElementById('word');
+
+        // x.addEventListener('keyup',function(){
+            
+            
+        //     // console.log(this.value.length);
+        //     let p = this.value.length;
+        //     document.getElementById('char').innerHTML = p;
+
+        //     // console.log(this.value);
+
+        //     let m = this.value.split(" ");
+        //     // console.log(m);
+            
+        //    let s = [];
+        //     for(let x of m){
+        //         // console.log(x);
+        //         if(x){
+        //             s.push(x);
+        //         }
+        //     }
+        //     for(let x of v);
+        //         if(x){
+                 
+        //         }
+
+        // //   // console.log(s.length);
+        //     document.getElementById('count').innerHTML = s.length;
+          // });
+
+                let x = document.getElementById('word');
+
+                x.addEventListener('keyup', function(){
+                    // console.log(this.value.lenght)
+                        let x = this.value.length;
+                        // console.log(x);
+                    document.getElementById('char').innerHTML = x;
+                  
+                   
+                    let c =  x.split(" ");
+                    console.log(c);
+                    // document.getElementById('count').innerHTML = world.length;
+
+
+
+
+
+
+                });
+
+
+
+       
+
+
+    </script>
+</body>
+</html>
